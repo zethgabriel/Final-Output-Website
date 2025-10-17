@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Make a Booking | MediConnect</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="MediConnect Logo">
+      <h1>MediConnect <span>Clinic</span></h1>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="find.html">Find a Doctor</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="booking.html" class="active">Make a Booking</a></li>
+    </ul>
+    <a href="register.html" class="btn-register">Register</a>
+  </nav>
+
+  <!-- BOOKING SECTION -->
+  <section class="booking-section">
+    <div class="booking-container">
+      <h2>Make a <span>Booking</span></h2>
+      <p class="subtitle">Book your appointment with ease. Fill out the form below and we’ll confirm your schedule shortly.</p>
+
+      <form class="booking-form">
+        <div class="form-row">
+          <input type="text" placeholder="Full Name" required>
+          <input type="email" placeholder="Email Address" required>
+        </div>
+
+        <div class="form-row">
+          <input type="tel" placeholder="Phone Number" required>
+          <select required>
+            <option value="">Select Department</option>
+            <option>General Medicine</option>
+            <option>Pediatrics</option>
+            <option>Cardiology</option>
+            <option>Dermatology</option>
+            <option>Dental Care</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <input type="date" required>
+          <input type="time" required>
+        </div>
+
+        <textarea placeholder="Additional Notes (Optional)"></textarea>
+
+        <button type="submit">Submit Booking</button>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
